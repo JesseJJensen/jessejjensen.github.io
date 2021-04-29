@@ -1,0 +1,144 @@
+ /* makking the box   */
+ .grid { 
+    display: flex;
+    flex-wrap: wrap;
+    border: solid black 5px;
+    width: 600px;
+    height: 600px;
+    background: url(./spacebackground2.png);
+    animation: scroll-background 10s linear infinite;
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+} 
+
+@keyframes scroll-background {
+    from {
+      background-position-y: 0px;
+    }
+    to {
+      background-position-y: 322px;
+    }
+  }
+
+ /* sizing the 900 divs  */
+ .grid div {
+    width: 30px;
+    height: 30px;
+} 
+
+ .shooter {  
+
+    background-image: url(./SpaceInvaderImages/dragon.png);
+    background-size: cover;
+
+}
+
+.motherShip {
+    background-image: url('./enemy-red-4.png');
+    background-size: cover;
+
+} 
+
+.invader {
+    background-image: url('./enemy-green-1.png');
+    background-size: cover;
+}
+
+.boom{
+    background-image: url('./Boom.ico');
+    background-size: cover;
+}
+
+.laser {
+
+    background-image: url('./laser-red-8.png');
+    background-size: cover;
+    
+}
+
+body {
+    display: grid;
+    align-items: center;
+}
+
+  @media screen and (min-width: 992px) {
+      .grid {
+        display: flex;
+        flex-wrap: wrap;
+        border: solid black 5px;
+        width: 800px;
+        height: 600px;
+      }
+  } 
+
+
+/* header {
+    text-align: center;
+    background: black;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  footer {
+    padding: 10px;
+    text-align: center;
+    font-size: 11px;
+    background: black;
+    color: white;
+  }  */
+
+/* .game-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+  } */
+
+  /* .game {
+    width: 600px;
+    height: 600px;
+    background: url(./spacebackground2.png);
+    animation: scroll-background 10s linear infinite;
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+  } 
+
+@keyframes scroll-background {
+    from {
+      background-position-y: 0px;
+    }
+    to {
+      background-position-y: 322px;
+    }
+  } */
+
+.game .player {
+    position: absolute;
+    margin-left: -20px;
+    width: 40px;
+  }
+
+.congratulations {
+    display: none;
+    position: absolute;
+    background: #c7a526;
+    color: white;
+    padding: 20px 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    animation: pop-in 1s;
+  }
+
+.game-over {
+    display: none;
+    position: absolute;
+    background: #6b1818;
+    color: white;
+    padding: 20px 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    animation: pop-in 1s;
+  }
