@@ -42,7 +42,11 @@
 - [x] What did you achieve yesterday?
 - [x] What are your goals for today?
 - [x] Do you have any blockers?
-1. RESPONSE
-2. RESPONSE
-3. RESPONSE
+1. Styled the game and finished logic
+2. present it
+3. nope
+
+1. I got a better understanding of functions and how they use the data from array's and objects.
+
+2. I would like to spend more time on the application of functions. Popular functions and so on. 
 
