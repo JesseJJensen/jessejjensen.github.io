@@ -205,7 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {    //created DOM event lis
                 switch(e.keyCode) { 
                     case 32:
                         laserId = setInterval(moveLaser, 75)
-                        const audio = new Audio("/sounds/sfx-laser.m4a");
+                        const audio = new Audio("sound/sfx-laser.m4a");
                         audio.play();
                         break
                 }
