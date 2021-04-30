@@ -165,8 +165,9 @@ document.addEventListener('DOMContentLoaded', () => {    //created DOM event lis
             invaderId = setInterval(moveInvaders, 500)
             // invaderId = setInterval(moveMotherShip, 100)
             setTimeout(function(){
-            invaderId= setInterval(moveInvaders, 300)
-            }, 5000); 
+            invader2Id= setInterval(moveInvaders, 300)
+
+            }, 10000); 
 
            // creates a laser to shoot enemy ships 
             function shoot(e) {
@@ -215,11 +216,3 @@ document.addEventListener('DOMContentLoaded', () => {    //created DOM event lis
             document.addEventListener('keyup', shoot)
         
     })
-
-
- 
-
-
-
-
-

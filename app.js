@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {    //created DOM event lis
       const boxes = Array.from(document.querySelectorAll('.grid div'))
     
     //Defines the enemy invdaders on how they will appear in the array
-    const enemyInvaderMotherShip = [1]
+    // const enemyInvaderMotherShip = [1]
     const enemyInvaders = [
         0,2,4,6,   10,12,14,16, 
         20,22,24,26,   30,32,34,36,

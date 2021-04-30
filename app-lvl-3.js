@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {    //created DOM event lis
     const enemyInvaders = [
         0,2,4,6,   10,12,14,16, 
         20,22,24,26,   30,32,34,36,
-        // 40,42,44,46,   50,52,54,56,
+        40,42,44,46,   50,52,54,56,
         // 60,62,64,66,   70,72,74,76,
         //30,32,34,36,  48,50,52,54,
         //   60,62,64,66,   70,72,74,   78,80,82,84,
@@ -166,7 +166,15 @@ document.addEventListener('DOMContentLoaded', () => {    //created DOM event lis
             // invaderId = setInterval(moveMotherShip, 100)
             setTimeout(function(){
             invaderId= setInterval(moveInvaders, 300)
-            }, 5000); 
+            }, 3000); 
+
+            setTimeout(function(){
+            invaderId= setInterval(moveInvaders, 200)
+            }, 6000); 
+            
+            setTimeout(function(){
+                invaderId= setInterval(moveInvaders, 200)
+            }, 9000); 
 
            // creates a laser to shoot enemy ships 
             function shoot(e) {
@@ -215,11 +223,3 @@ document.addEventListener('DOMContentLoaded', () => {    //created DOM event lis
             document.addEventListener('keyup', shoot)
         
     })
-
-
- 
-
-
-
-
-
