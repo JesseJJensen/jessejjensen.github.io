@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {    //created DOM event lis
     //Defines the enemy invdaders on how they will appear in the array
     const enemyInvaderMotherShip = [1]
     const enemyInvaders = [
-        // 0,2,4,6,   10,12,14,16, 
+        0,2,4,6,   10,12,14,16, 
         20,22,24,26,   30,32,34,36,
         //30,32,34,36,  48,50,52,54,
         //   60,62,64,66,   70,72,74,   78,80,82,84,
