@@ -1,39 +1,46 @@
-# Title of Game
+# Space Invaders
 
-Space Invaders 
+A JavaScript built game with some basic HTML and CSS.
 
 # HOW TO PLAY
 
-Move and Shoot
+Advance through the levels using the arrow keys for movement and the spacebar to shoot the alien invaders. Also, don't let them escape, because they are headed to destroy planet earth. 
 
 ## Start Up Screen:
-Images of the start up screen go here 
+![](https://jessejjensen.github.io/space-invader-images/space-invader-screen.png)
 
 # HOW TO INSTALL
-
-## Example
-1. *`Fork`* and *`Clone`* this respository to your local machine
-2. Open `index.html` in your browser to play or 
-3. Open the directory in your text editor of choice to view or edit the code
-
-Other install instructions will go here
+Play it live here: https://jessejjensen.github.io/
 
 
 # HOW IT WORKS
-How the game works will go here
-Code snippets go here
+
+The game is built using several methods and will continue to use more as I keep adding to this game.
+
+  • setInterval()
+  • clearInterval()
+  • push()
+  • indexOf()
+  • includes()
+  • classList
+  • querySelector()
+  • addEventListener()
+  • Switch cases
+  • keyCodes
 
 
 # FUTURE CONSIDERATIONS
 
-Future considerations or stretch goals go here.
+The goal is to add several games to this screen making an arcade of games. I will use these games for reference in the future and set-up practice folders so I can practice building these games without any references.
 
-
-# PROCESS WORK
 
 ## Initial Wireframes:
 
+![](https://jessejjensen.github.io/docs/ScreenShot2021-04-26at8.32.53AM.png)
 
-## Scratch Work:
+![](https://jessejjensen.github.io/docs/ScreenShot2021-04-26at8.33.05AM.png)
 
-Scratch Work goes here
+![](https://jessejjensen.github.io/docs/ScreenShot2021-04-26at8.33.14AM.png)
+
+
+
