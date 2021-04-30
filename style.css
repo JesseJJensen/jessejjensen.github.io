@@ -5,7 +5,7 @@
     border: solid black 5px;
     width: 600px;
     height: 600px;
-    background: url(./spacebackground2.png);
+    background: url(./SpaceInvaderImages/spacebackground2.png);
     animation: scroll-background 10s linear infinite;
     box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
     position: relative;
@@ -34,24 +34,24 @@
 }
 
 .motherShip {
-    background-image: url('./enemy-red-4.png');
+    background-image: url('./SpaceInvaderImages/enemy-red-4.png');
     background-size: cover;
 
 } 
 
 .invader {
-    background-image: url('./enemy-green-1.png');
+    background-image: url('./SpaceInvaderImages/enemy-green-1.png');
     background-size: cover;
 }
 
 .boom{
-    background-image: url('./Boom.ico');
+    background-image: url('./SpaceInvaderImages/Boom.ico');
     background-size: cover;
 }
 
 .laser {
 
-    background-image: url('./laser-red-8.png');
+    background-image: url('./SpaceInvaderImages/laser-red-8.png');
     background-size: cover;
     
 }
