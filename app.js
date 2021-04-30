@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {    //created DOM event lis
     // const enemyInvaderMotherShip = [1]
     const enemyInvaders = [
         0,2,4,6,   10,12,14,16, 
-        20,22,24,26,   30,32,34,36,
+        // 20,22,24,26,   30,32,34,36,
         //30,32,34,36,  48,50,52,54,
         //   60,62,64,66,   70,72,74,   78,80,82,84,
         //   90,92,94,96,   100,102,104,   108,110,112,114
@@ -144,6 +144,8 @@ document.addEventListener('DOMContentLoaded', () => {    //created DOM event lis
                 for (let i = 0; i <= enemyInvaders.length -1; i++) {
                     if(enemyInvaders[i] > (boxes.length - (screenWidth-1))) {
                         level.textContent = 'Game Over'
+                        const audio = new Audio("sound/sfx-boom.m4a");
+                        audio.play();
                         clearInterval(invaderId)
                     }
                 }
@@ -162,10 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {    //created DOM event lis
             //set speed of enemy     
             invaderId = setInterval(moveInvaders, 500)
             // invaderId = setInterval(moveMotherShip, 100)
-            // setTimeout(function(){
-            // invader2Id= setInterval(moveInvaders2, 500)
 
-            // }, 10000); 
 
            // creates a laser to shoot enemy ships 
             function shoot(e) {
