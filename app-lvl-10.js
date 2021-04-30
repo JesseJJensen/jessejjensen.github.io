@@ -30,8 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {    //created DOM event lis
     //Defines the enemy invdaders on how they will appear in the array
     // const enemyInvaderMotherShip = [1]
     const enemyInvaders = [
-        0,2,4,6,   10,12,14,16, 
-        20,22,24,26,   30,32,34,36,
+        0, 25, 62, 44, 22, 40, 66, 6, 3//10,12,14,16, 
+        //20,22,24,26,   30,32,34,36,
         // 40,42,44,46,   50,52,54,56,
         // 60,62,64,66,   70,72,74,76,
         //30,32,34,36,  48,50,52,54,
@@ -49,14 +49,14 @@ document.addEventListener('DOMContentLoaded', () => {    //created DOM event lis
     function draw() {
         for (let i =  0; i < enemyInvaders.length; i++) {
           if(!aliensRemoved.includes(i)) {
-            boxes[enemyInvaders[i]].classList.add('invader')
+            boxes[enemyInvaders[i]].classList.add('rome')
           }
         }
       }
 
     function remove() {
         for (let i = 0; i < enemyInvaders.length; i++) {
-          boxes[enemyInvaders[i]].classList.remove('invader')
+          boxes[enemyInvaders[i]].classList.remove('rome')
         }
     }
 
@@ -123,19 +123,19 @@ document.addEventListener('DOMContentLoaded', () => {    //created DOM event lis
                     else directionMovement = -1
                 } // loop over enemy array to move enemy invaders
                 for (let i = 0; i <= enemyInvaders.length -1; i++) {
-                    boxes[enemyInvaders[i]].classList.remove('invader')
+                    boxes[enemyInvaders[i]].classList.remove('rome')
                 } // loop over again to add new direction to all items in array
                 for (let i = 0; i <= enemyInvaders.length -1; i++) {
                     enemyInvaders[i] += directionMovement
                 } //loop over again to add class of invader to the new location of all items in array
                 for (let i = 0; i <= enemyInvaders.length -1; i++) {
                     if (!enemysKilled.includes(i)) { //if enemys killed does not include space you can add invader class this means we wont add invaders after they've been shot
-                        boxes[enemyInvaders[i]].classList.add('invader')
+                        boxes[enemyInvaders[i]].classList.add('rome')
                     }
                 }
         
                 // if shooter touches invader it will end game
-                if(boxes[playerOneLocation].classList.contains('invader', 'shooter')) {
+                if(boxes[playerOneLocation].classList.contains('rome', 'shooter')) {
                     level.textContent = 'Game Over'
                     boxes[playerOneLocation].classList.add('boom')
                     const audio = new Audio("sound/sfx-ohno.m4a");
@@ -165,9 +165,15 @@ document.addEventListener('DOMContentLoaded', () => {    //created DOM event lis
             invaderId = setInterval(moveInvaders, 500)
             // invaderId = setInterval(moveMotherShip, 100)
             setTimeout(function(){
-            invader2Id= setInterval(moveInvaders, 300)
+            invader2Id= setInterval(moveInvaders, 100)
 
-            }, 10000); 
+            }, 2000); 
+
+
+            setTimeout(function(){
+                invader2Id= setInterval(moveInvaders, 75)
+    
+                }, 6000); 
 
            // creates a laser to shoot enemy ships 
             function shoot(e) {
@@ -179,9 +185,9 @@ document.addEventListener('DOMContentLoaded', () => {    //created DOM event lis
                     boxes[currentLaserIndex].classList.remove('laser')// this will remove laser befor adding new position
                     currentLaserIndex -= screenWidth // laser will go back spaces = screenWidth (this makes laser go up 1)
                     boxes[currentLaserIndex].classList.add('laser')// this will add laser style to new box
-                    if(boxes[currentLaserIndex].classList.contains('invader')) { // because we moved we want to check to see if we hit anything
+                    if(boxes[currentLaserIndex].classList.contains('rome')) { // because we moved we want to check to see if we hit anything
                         boxes[currentLaserIndex].classList.remove('laser')//remove laser style
-                        boxes[currentLaserIndex].classList.remove('invader')//remove invader style
+                        boxes[currentLaserIndex].classList.remove('rome')//remove invader style
                         boxes[currentLaserIndex].classList.add('boom') // create boom
                         const audio = new Audio("sound/sfx-boom.m4a");
                         audio.play();

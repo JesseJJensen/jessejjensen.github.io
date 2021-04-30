@@ -44,6 +44,11 @@
     background-size: cover;
 }
 
+.rome {
+  background-image: url('./SpaceInvaderImages/rome.png');
+  background-size: cover;
+}
+
 .boom{
     background-image: url('./SpaceInvaderImages/Boom.ico');
     background-size: cover;
