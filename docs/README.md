@@ -105,7 +105,7 @@ The goal is to add several games to this screen making an arcade of games. I wil
 
 ![wf1](https://github.com/JesseJJensen/jessejjensen.github.io/blob/main/docs/Screen%20Shot%202021-04-26%20at%208.32.53%20AM.png?raw=true)
 
-![wf2](https://github.com/JesseJJensen/jessejjensen.github.io/blob/main/docs/Screen%20Shot%202021-04-26%20at8.33.05%20AM.png?raw=true)
+![wf2](https://github.com/JesseJJensen/jessejjensen.github.io/blob/main/docs/Screen%20Shot%202021-04-26%20at%208.33.05%20AM.png?raw=true)
 
-![wf3](https://github.com/JesseJJensen/jessejjensen.github.io/blob/main/docs/Screen%20Shot%202021-04-26%20at8.33.14%20AM.png?raw=true)
+![wf3](https://github.com/JesseJJensen/jessejjensen.github.io/blob/main/docs/Screen%20Shot%202021-04-26%20at%208.33.14%20AM.png?raw=true)
 
