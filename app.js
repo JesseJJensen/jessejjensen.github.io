@@ -17,8 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {    //created DOM event lis
     let invader2Id
     let squareTotal = 400
     
-    
-
     // will add divs now instead of listing them all
     for (let i = 0; i < squareTotal; i++) {
         const square = document.createElement('div')
@@ -31,19 +29,19 @@ document.addEventListener('DOMContentLoaded', () => {    //created DOM event lis
     // const enemyInvaderMotherShip = [1]
     const enemyInvaders = [
         0,2,4,6,   10,12,14,16, 
-        // 20,22,24,26,   30,32,34,36,
+        //20,22,24,26,  30,32,34,36,
         //30,32,34,36,  48,50,52,54,
-        //   60,62,64,66,   70,72,74,   78,80,82,84,
-        //   90,92,94,96,   100,102,104,   108,110,112,114
+        //60,62,64,66,  70,72,74,   78,80,82,84,
+        //90,92,94,96,  100,102,104,   108,110,112,114
     ]
     const enemyInvaders2 = [
         1,3,5,7,   11,13,15,17, 
         // 20,22,24,26,   30,32,34,36,
     ]
+
     // draws enemy invaders- for each item in the array we will call invader 
     // I will pass this through the squares and any current index value there might be; 0 in this case
-    // Then add a class list to that square. This will pull mothership and invader style from css 
-    
+    // Then add a class list to that square. This will pull mothership and invader style from css   
     function draw() {
         for (let i =  0; i < enemyInvaders.length; i++) {
           if(!aliensRemoved.includes(i)) {
@@ -57,8 +55,6 @@ document.addEventListener('DOMContentLoaded', () => {    //created DOM event lis
           boxes[enemyInvaders[i]].classList.remove('invader')
         }
     }
-
-        
         boxes[playerOneLocation].classList.add('shooter') // Using classList.add to style player
 
         // Moving the player 
@@ -81,33 +77,6 @@ document.addEventListener('DOMContentLoaded', () => {    //created DOM event lis
                 boxes[playerOneLocation].classList.add('shooter')
             }
             document.addEventListener('keydown', movePlayerOne)
-
-            // move motherShip
-            // function moveMotherShip() {// need to define left edge and right edge 
-            //     const leftEdge = enemyInvaderMotherShip[0] % screenWidth === 0
-            //     const rightEdge = enemyInvaderMotherShip[enemyInvaderMotherShip.length -1] % screenWidth === screenWidth -1
-            //     // if on left edge and direction = -1 or at right edge and direction is +1 ===> then set direction to motherShip location to pin to top
-            //     if((leftEdge && motherShipDirectionMovement === -1) || (rightEdge && motherShipDirectionMovement === 1)){
-            //          motherShipDirectionMovement = enemyMotherShipLocation
-            //      } else if (motherShipDirectionMovement === enemyMotherShipLocation) {// if directions already screenwidth  we carry on w/ same logic above so if you hit left edge change direction to +1
-            //         if (leftEdge) motherShipDirectionMovement = 1
-            //         else motherShipDirectionMovement = -1
-            //     }// loop over motherShip array to move enemy invaders
-            //     for (let i = 0; i <= enemyInvaderMotherShip.length -1; i++) {
-            //         boxes[enemyInvaderMotherShip[i]].classList.remove('motherShip')
-            //     }// loop over again to add new direction to all items in array
-            //     for (let i = 0; i <= enemyInvaderMotherShip.length -1; i++) {
-            //         enemyInvaderMotherShip[i] += motherShipDirectionMovement
-            //     } //loop over again to add class of mothership to the new location of all items in array
-            //     for (let i = 0; i <= enemyInvaderMotherShip.length -1; i++) {
-            //         if (!enemysKilled.includes(i)) {
-            //             boxes[enemyInvaderMotherShip[i]].classList.add('motherShip')
-            //         }
-            //     }
-                
-
-            //     }
-
 
             // move enemy invaders
             function moveInvaders() { // need to define left edge and right edge 
@@ -154,17 +123,12 @@ document.addEventListener('DOMContentLoaded', () => {    //created DOM event lis
                 if (enemysKilled.length === enemyInvaders.length) {
                     level.textContent = 'Nice Work!'
                     clearInterval(invaderId)
-                
-                    
-                }
-    
+                }  
             }
-
 
             //set speed of enemy     
             invaderId = setInterval(moveInvaders, 500)
             // invaderId = setInterval(moveMotherShip, 100)
-
 
            // creates a laser to shoot enemy ships 
             function shoot(e) {
@@ -207,13 +171,10 @@ document.addEventListener('DOMContentLoaded', () => {    //created DOM event lis
                         const audio = new Audio("sound/sfx-laser.m4a");
                         audio.play();
                         break
-                }
-             
+                }  
             }
-            document.addEventListener('keyup', shoot)
-        
+            document.addEventListener('keyup', shoot)     
     })
-
 
  
 
