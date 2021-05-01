@@ -7,7 +7,7 @@ A JavaScript built game with some basic HTML and CSS.
 Advance through the levels using the arrow keys for movement and the spacebar to shoot the alien invaders. Also, don't let them escape, because they are headed to destroy planet earth. 
 
 ## Start Up Screen:
-![space-invader-sreen](space-invader-images/space-invader-screen.png)
+![game-img](https://github.com/jessejjensen/jessejjensen.github.io/blob/space-invader-images/space-invader-screen.png?raw=true)
 
 # HOW TO INSTALL
 Play it live here: https://jessejjensen.github.io/
@@ -102,8 +102,14 @@ The goal is to add several games to this screen making an arcade of games. I wil
 
 
 ## Initial Wireframes:
+![wf](https://github.com/JesseJJensen/jessejjensen.github.io/blob/master/docs/ScreenShot2021-04-26at8.32.53AM.png?raw=true)
+![wf](https://github.com/JesseJJensen/jessejjensen.github.io/blob/main/docs/ScreenShot2021-04-26at8.32.53AM.png?raw=true)
+![wf](https://github.com/JesseJJensen/jessejjensen.github.io/blob/main/docs/ScreenShot2021-04-26at8.32.53AM.png?)
+![wf](https://github.com/JesseJJensen/jessejjensen.github.io/blob/main/docs/ScreenShot2021-04-26at8.32.53AM.png)
+![wf](https://github.com/JesseJJensen/jessejjensen.github.io/blob/master/docs/ScreenShot2021-04-26at8.32.53AM.png)
+![wf](https://github.com/JesseJJensen/jessejjensen.github.io/blob/main/docs/ScreenShot2021-04-26at8.32.53AM.png)
 
-![WireFrame1] (/docs/ScreenShot2021-04-26at8.32.53AM.png)
+
 
 ![WireFrame2](docs/ScreenShot2021-04-26at8.33.05AM.png)
 
