@@ -7,12 +7,7 @@ A JavaScript built game with some basic HTML and CSS.
 Advance through the levels using the arrow keys for movement and the spacebar to shoot the alien invaders. Also, don't let them escape, because they are headed to destroy planet earth. 
 
 ## Start Up Screen:
-<<<<<<< HEAD
-
 ![game-img](https://github.com/JesseJJensen/jessejjensen.github.io/blob/main/SpaceInvaderImages/space-invader-screen.png?raw=true)
-=======
-![game-img](https://github.com/jessejjensen/jessejjensen.github.io/blob/space-invader-images/space-invader-screen.png?raw=true)
->>>>>>> 2ea22aac9c42da1700be702b32fa10dfd44845b7
 
 # HOW TO INSTALL
 Play it live here: https://jessejjensen.github.io/
@@ -106,23 +101,9 @@ function movePlayerOne(e) {
 The goal is to add several games to this screen making an arcade of games. I will use these games for reference in the future and set-up practice folders so I can practice building these games without any references.
 
 
-## Initial Wireframes:
-![wf](https://github.com/JesseJJensen/jessejjensen.github.io/blob/master/docs/ScreenShot2021-04-26at8.32.53AM.png?raw=true)
-![wf](https://github.com/JesseJJensen/jessejjensen.github.io/blob/main/docs/ScreenShot2021-04-26at8.32.53AM.png?raw=true)
-![wf](https://github.com/JesseJJensen/jessejjensen.github.io/blob/main/docs/ScreenShot2021-04-26at8.32.53AM.png?)
-![wf](https://github.com/JesseJJensen/jessejjensen.github.io/blob/main/docs/ScreenShot2021-04-26at8.32.53AM.png)
-![wf](https://github.com/JesseJJensen/jessejjensen.github.io/blob/master/docs/ScreenShot2021-04-26at8.32.53AM.png)
-![wf](https://github.com/JesseJJensen/jessejjensen.github.io/blob/main/docs/ScreenShot2021-04-26at8.32.53AM.png)
+## Initial Wireframe
 
-
-<<<<<<< HEAD
 ![wf1](https://github.com/JesseJJensen/jessejjensen.github.io/blob/main/docs/Screen%20Shot%202021-04-26%20at%208.32.53%20AM.png?raw=true)
-=======
-
-![WireFrame2](docs/ScreenShot2021-04-26at8.33.05AM.png)
-
-![WireFrame3] (docs/ScreenShot2021-04-26at8.33.14AM.png)
->>>>>>> 2ea22aac9c42da1700be702b32fa10dfd44845b7
 
 ![wf2](https://github.com/JesseJJensen/jessejjensen.github.io/blob/main/docs/Screen%20Shot%202021-04-26%20at8.33.05%20AM.png?raw=true)
 
