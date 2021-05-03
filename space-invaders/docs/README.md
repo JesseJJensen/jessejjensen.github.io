@@ -10,7 +10,7 @@ Advance through the levels using the arrow keys for movement and the spacebar to
 ![game-img](https://github.com/JesseJJensen/jessejjensen.github.io/blob/main/space-invaders/SpaceInvaderImages/space-invader-screen.png?raw=true)
 
 # HOW TO INSTALL
-Play it live here: https://jessejjensen.github.io/
+Play it live here: https://jessejjensen.github.io/space-invaders
 
 
 # HOW IT WORKS
