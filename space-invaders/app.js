@@ -2,19 +2,12 @@ document.addEventListener('DOMContentLoaded', () => {    //created DOM event lis
     const grid = document.querySelector('.grid') // created query selector  for div's 
     const confirmedKills = document.querySelector('#result') //Using # for Id instead of dot
     const level = document.querySelector('#status') //Using # for Id instead of dot
-    const endGame = document.querySelector('#endGame')
-    const btn = document.querySelector('#button')
     let screenWidth = 20 // Let js know we want width of grid to be 15
     let playerOneLocation = 202 // this is where player 1 shooter will start
-    let enemyLocation = 0 // this is where the enemy boxes will start
-    let enemyMotherShipLocation = 0 //this is using math function below to create random location at start of game
     let enemysKilled = [] // this will count every time you killl enemy box ship
     let result = 0 // starting score enemys killed will increase result
-    let directionMovement = 1 // tells each box ship how far it can move 
-    let motherShipDirectionMovement = 1 // tells mother ship how many spaces it can move
+    let directionMovement = 1 // tells each box ship how far it can move
     let invaderId 
-    let motherShipId
-    let invader2Id
     let squareTotal = 400
     
     // will add divs now instead of listing them all
@@ -29,14 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {    //created DOM event lis
     // const enemyInvaderMotherShip = [1]
     const enemyInvaders = [
         0,2,4,6,   10,12,14,16, 
-        //20,22,24,26,  30,32,34,36,
-        //30,32,34,36,  48,50,52,54,
-        //60,62,64,66,  70,72,74,   78,80,82,84,
-        //90,92,94,96,  100,102,104,   108,110,112,114
-    ]
-    const enemyInvaders2 = [
-        1,3,5,7,   11,13,15,17, 
-        // 20,22,24,26,   30,32,34,36,
     ]
 
     // draws enemy invaders- for each item in the array we will call invader 
@@ -128,8 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {    //created DOM event lis
 
             //set speed of enemy     
             invaderId = setInterval(moveInvaders, 500)
-            // invaderId = setInterval(moveMotherShip, 100)
-
+            
            // creates a laser to shoot enemy ships 
             function shoot(e) {
                 let laserId
